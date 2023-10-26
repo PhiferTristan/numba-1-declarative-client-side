@@ -1,9 +1,9 @@
 import { Routes, Route, Outlet } from "react-router-dom";
 import { NavBar } from "./components/navigation/NavBar";
 import { Homepage } from "./components/Homepage";
-import { ShippingShipsList } from "./components/lists/ShipsLists";
-import { HaulersList } from "./components/lists/HaulersList";
 import { DocksList } from "./components/lists/DocksList";
+import { ShippingShipsList } from "./components/ShippingShips";
+import { HaulingShips } from "./components/HaulingShips";
 
 export default function App() {
   return (
@@ -21,7 +21,7 @@ export default function App() {
           >
             <Route path="home" element={<Homepage />} />
             <Route path="shippingships" element={<ShippingShipsList />} />
-            <Route path="haulingships" element={<HaulersList />} />
+            <Route path="haulingships" element={<HaulingShips />} />
             <Route path="docks" element={<DocksList />} />
           </Route>
         </Routes>
