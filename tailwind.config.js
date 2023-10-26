@@ -5,8 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // colors: {
+      //   'regal-blue': '#243c5a',
+      // }
+      // backgroundColor: 
+      // backgroundImage: {
+      //   "":""
+      // }
+    },
   },
   plugins: [],
 }
 
+// h-screen bg-gradient-to-b from-gray-800
