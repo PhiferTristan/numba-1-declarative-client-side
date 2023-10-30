@@ -3,3 +3,9 @@ export const getAllDocks = () => {
         `http://localhost:8000/docks`
     ).then((res) => res.json())
 };
+
+export const getAllDocksEmbedHaulers = () => {
+    return fetch(
+        `http://localhost:8000/docks?_embed=haulers`
+    ).then((res) => res.json())
+};

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllHaulers } from "../services/haulersService";
+import { getAllHaulers } from "../../services/haulersService";
 import { useNavigate } from "react-router-dom";
 
 export const HaulingShips = () => {
@@ -16,7 +16,7 @@ export const HaulingShips = () => {
   return (
     <>
       <div className="haulers-list-container flex flex-col bg-slate-800 text-white mx-auto w-[400px]">
-        <h2 className="haulers-list-header text-4xl text-center underline">Haulers List</h2>
+        <h2 className="haulers-list-header text-4xl text-center p-10 underline">Haulers List</h2>
         <ul>
           {allHaulers.map((hauler) => {
             return (

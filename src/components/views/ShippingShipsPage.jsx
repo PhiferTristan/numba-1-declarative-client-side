@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { deleteShip, getAllShipsWithHaulers } from "../services/shipsService";
+import { deleteShip, getAllShipsWithHaulers } from "../../services/shipsService";
 
 export const ShippingShipsList = () => {
     const [allShips, setAllShips] = useState([]);
@@ -30,11 +30,11 @@ export const ShippingShipsList = () => {
             {allShips.map((ship) => {
               return (
                 <div
-                  className="flex fex-row justify-items-center space-x-20 p-5"
+                  className="flex justify-between space-x-20 p-5"
                   key={ship.id}
                 >
                   <div className="ship-name flex">{ship.name}</div>
-                  <div className="hauler-name flex" key={ship.hauler.haulerId}>
+                  <div className="hauler-name flex justify-center w-[200px]" key={ship.hauler.haulerId}>
                     Hauler:
                     {ship.hauler.haulerName}
                   </div>
