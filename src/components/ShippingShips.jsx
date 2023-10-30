@@ -24,13 +24,13 @@ export const ShippingShipsList = () => {
   
     return (
       <>
-        <div className="ships-list-container flex flex-col self-center items-center bg-slate-950 text-white">
-          <div className="ships-header text-4xl">Ships List</div>
+        <div className="ships-list-container flex flex-col self-center items-center bg-slate-800 text-white">
+          <div className="ships-header text-4xl p-10 underline">Ships List</div>
           <ul>
             {allShips.map((ship) => {
               return (
                 <div
-                  className="flex fex-row justify-items-center space-x-20"
+                  className="flex fex-row justify-items-center space-x-20 p-5"
                   key={ship.id}
                 >
                   <div className="ship-name flex">{ship.name}</div>

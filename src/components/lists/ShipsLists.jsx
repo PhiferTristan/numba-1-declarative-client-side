@@ -12,12 +12,12 @@ export const ShipsList = () => {
 
   return (
     <>
-      <div className="ships-container flex flex-col self-center items-center bg-slate-950 text-white">
-        <div className="ships-header text-4xl">Ships List</div>
+      <div className="ships-container flex flex-col self-center items-center bg-slate-800 text-white border border-blue-400 p-5">
+        <div className="ships-header text-4xl underline">Ships List</div>
         <ul>
           {allShips.map((ship) => {
             return (
-              <div className="flex" key={ship.id}>
+              <div className="flex p-5" key={ship.id}>
                 {ship.name}
               </div>
             );
