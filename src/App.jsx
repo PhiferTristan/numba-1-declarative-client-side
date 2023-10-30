@@ -1,10 +1,11 @@
 import { Routes, Route, Outlet } from "react-router-dom";
 import { NavBar } from "./components/navigation/NavBar";
-import { Homepage } from "./components/Homepage";
-import { DocksList } from "./components/lists/DocksList";
-import { ShippingShipsList } from "./components/ShippingShips";
-import { HaulingShips } from "./components/HaulingShips";
-import { EditHaulerForm } from "./components/forms/EditHaulerForm";
+import { Homepage } from "./components/views/Homepage"
+import { ShippingShipsList } from "./components/views/ShippingShipsPage";
+import { HaulingShips } from "./components/views/HaulingShips";
+import { EditHaulerForm } from "./components/forms/EditHaulerForm"
+import { DocksPage } from "./components/views/DocksPage";
+
 
 export default function App() {
   return (
@@ -26,7 +27,7 @@ export default function App() {
               <Route index element={<HaulingShips />} />
               <Route path=":haulerId/edit" element={<EditHaulerForm />} />
             </Route>
-            <Route path="docks" element={<DocksList />} />
+            <Route path="docks" element={<DocksPage />} />
           </Route>
         </Routes>
       </div>
