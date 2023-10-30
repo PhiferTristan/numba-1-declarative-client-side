@@ -12,12 +12,12 @@ export const HaulersList = () => {
 
   return (
     <>
-      <div className="haulers-container flex flex-col self-center items-center bg-slate-950 text-white">
-        <div className="haulers-header text-4xl">Haulers List</div>
+      <div className="haulers-container flex flex-col self-center items-center border border-blue-400 bg-slate-800 text-white p-5">
+        <div className="haulers-header text-4xl underline">Haulers List</div>
         <ul>
           {allHaulers.map((hauler) => {
             return (
-              <div className="flex" key={hauler.id}>
+              <div className="flex p-5" key={hauler.id}>
                 {hauler.name}
               </div>
             );
